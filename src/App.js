@@ -4,6 +4,7 @@ import './App.css';
 import Page1 from './page1';
 import Page2 from './page2';
 
+
 let listDate ={
   page1:{
     data:[1,2,3,4]
@@ -36,9 +37,10 @@ function App(e){
         <ul>
           <li><Link to="/page1">page1</Link></li>
           <li><Link to="/page2">page2</Link></li>
+          <li><Link to="/reduer">reduer</Link></li>
         </ul>
         <Route exact path="/Page1" component={Page1} />
-        <Route exact path="/Page2" component={Page2} /> 
+        <Route exact path="/Page2" component={Page2} />
       </Router>
       <Page3 />
     </ThemeContext.Provider>

@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route} from "react-router-dom";
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
 import './index.css';
 import App from './App';
+import Reduer from './reduer';
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+      <Route exact path="/reduer" component={Reduer} />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
