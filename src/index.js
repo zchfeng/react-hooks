@@ -4,6 +4,7 @@ import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Reduer from './reduer';
+import Memo from './memo';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -12,6 +13,7 @@ ReactDOM.render(
     <Router>
       <App />
       <Route exact path="/reduer" component={Reduer} />
+      <Route exact path="/memo" component={Memo} />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

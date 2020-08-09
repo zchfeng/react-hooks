@@ -38,6 +38,7 @@ function App(e){
           <li><Link to="/page1">page1</Link></li>
           <li><Link to="/page2">page2</Link></li>
           <li><Link to="/reduer">reduer</Link></li>
+          <li><Link to="/memo">Memo</Link></li>
         </ul>
         <Route exact path="/Page1" component={Page1} />
         <Route exact path="/Page2" component={Page2} />
